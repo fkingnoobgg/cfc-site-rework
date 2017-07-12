@@ -1,21 +1,21 @@
 (function($) {
 
 	"use strict";
-	$('.features').infinitescroll({
-        // infinite scroll options
-    },
-    function(){
-        // pause when new elements are loaded
-        $('.features').infinitescroll('pause')
-    }
-	);
-
-	function resume_infinite_scroll(){
-    // resume
-    $('.container').infinitescroll('resume')
-    // check if new elements should be loaded
-    $('.container').infinitescroll('scroll')
-	}
+	// $('.features').infinitescroll({
+  //       // infinite scroll options
+  //   },
+  //   function(){
+  //       // pause when new elements are loaded
+  //       $('.features').infinitescroll('pause')
+  //   }
+	// );
+	//
+	// function resume_infinite_scroll(){
+  //   // resume
+  //   $('.container').infinitescroll('resume')
+  //   // check if new elements should be loaded
+  //   $('.container').infinitescroll('scroll')
+	// }
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
