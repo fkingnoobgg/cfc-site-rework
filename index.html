@@ -65,10 +65,17 @@ layout: default
 					<p>
 						An annual event held by Coders for Causes where students from all disciplines
 						come together to hack together some sort of solution for a not-for-profit
-						organisation over the course of two days. 
+						organisation over the course of two days.
 					</p>
 					<section class="features">
-						<article>
+						{% for image in site.static_files %}
+							{% if image.path contains 'hackathon_2017' %}
+							<article>
+								<img class="image" src="{{ site.baseurl }}{{ image.path }}">
+							</article>
+							{% endif %}
+						{% endfor %}
+						<!-- <article>
 							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 							<h3 class="major">Sed feugiat lorem</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
@@ -91,10 +98,10 @@ layout: default
 							<h3 class="major">Fusce consequat</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 							<a href="#" class="special">Learn more</a>
-						</article>
+						</article> -->
 					</section>
 					<ul class="actions">
-						<li><a href="#" class="button">Browse All</a></li>
+						<li><a onclick="resume_infinite_scroll()" class="button">Browse All</a></li>
 					</ul>
 				</div>
 			</section>

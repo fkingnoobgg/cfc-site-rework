@@ -1,13 +1,21 @@
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	"use strict";
+	$('.features').infinitescroll({
+        // infinite scroll options
+    },
+    function(){
+        // pause when new elements are loaded
+        $('.features').infinitescroll('pause')
+    }
+	);
 
+	function resume_infinite_scroll(){
+    // resume
+    $('.container').infinitescroll('resume')
+    // check if new elements should be loaded
+    $('.container').infinitescroll('scroll')
+	}
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
