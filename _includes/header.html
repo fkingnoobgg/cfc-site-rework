@@ -12,11 +12,20 @@
       <h2>Menu</h2>
       <ul class="links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">Generic</a></li>
-        <li><a href="elements.html">Elements</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="{{bases.url}}membership.html">Membership</a></li>
+        <li><a href="elements.html">Hackathon</a></li>
+        <li><a href="#">Minutes</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
       <a href="#" class="close">Close</a>
     </div>
   </nav>
+
+<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<a href="{{base.url}}index.html"><div class="logo"><span class="icon fa-diamond"></span></div></a>
+			<h2>{{ page.title }}</h2>
+			<p>{{ page.description }}</p>
+		</div>
+	</section>
